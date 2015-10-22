@@ -56,7 +56,7 @@ checklist:
 * Is it working on a different
   browser
 
-* If you are using TURN/STUN, make sure it is working using this page
+* If you are using TURN/STUN, make sure it is working using this [STUN/TURN testing] page
 
 * Is there a tutorial that does exactly what you are trying to do? Check out
   the code from github, run it in your machine and see what happens. Those
@@ -270,6 +270,7 @@ Mailing List] and through [StackOverflow] using the tags *kurento* and
 
 Before asking for support, please read first the [Kurento Netiquette Guidelines]
 
+[STUN/TURN testing]: https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/
 [documentation]: http://www.kurento.org/documentation
 [FIWARE]: http://www.fiware.org
 [GitHub Kurento bugtracker]: https://github.com/Kurento/bugtracker/issues
