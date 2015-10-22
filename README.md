@@ -52,9 +52,8 @@ checklist:
 
 * Read the documentation: If the answer is in the documentation, the answer
   will be “Read the documentation”... one mail round wasted
-* Webrtc is working in your target browser? you can check that here
-* Is it working on a different
-  browser
+* Webrtc is working in your target browser? use the [WebRTC test page]
+* Is it working on a different browser
 
 * If you are using TURN/STUN, make sure it is working using this [STUN/TURN testing] page
 
@@ -270,6 +269,7 @@ Mailing List] and through [StackOverflow] using the tags *kurento* and
 
 Before asking for support, please read first the [Kurento Netiquette Guidelines]
 
+[WebRTC test page]: https://test.webrtc.org/
 [STUN/TURN testing]: https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/
 [documentation]: http://www.kurento.org/documentation
 [FIWARE]: http://www.fiware.org
