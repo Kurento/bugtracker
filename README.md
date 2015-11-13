@@ -40,6 +40,10 @@ TL;DR
 * Be curious: has it been asked before? is it really a bug? Google is your
   friend!
 
+* Be provactive: Check with other versions, speacially with the latest 
+  develeopment version. We can't emphasize this enough: it's the
+  first thing that we are going to ask
+
 How to report a bug
 -------------------
 
@@ -124,7 +128,8 @@ the bug.
       * Config file in /etc/kurento/kurento.conf.json
 
     * Client libraries. Stating the flavour (NodeJS, JavaScript, Java or
-      homebrewed) it’s a plus, so we don’t have to ask that later. Make sure they match the major an minor versions of your KMS modules
+      homebrewed) it’s a plus, so we don’t have to ask that later. Make sure they match 
+      the major an minor versions of your KMS modules
 
     * Operating system where the client is running
 
@@ -144,6 +149,7 @@ the bug.
     you using TURN/STUN?
 
   * What does your pipeline look like?
+
   * Have you checked the development version?
 
 * If you can provide a test application, please do so. A pointer to a github
