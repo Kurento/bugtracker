@@ -52,8 +52,14 @@ checklist:
 
 * Read the documentation: If the answer is in the documentation, the answer
   will be “Read the documentation”... one mail round wasted
-* Check with the lates development version. Read about [Working with nightly builds] in the documentation. You might have to do a `sudo apt-get install dist-upgrade` in some cases
+
+* Check with the lates development version. Read about [Working with nightly builds] 
+  in the documentation if needed. Note: You might have to run 
+  `sudo apt-get install dist-upgrade` in some cases, if you see the message 
+  `The following packages have been kept back`
+
 * Webrtc is working in your target browser? use the [WebRTC test page]
+
 * Is it working on a different browser
 
 * If you are using TURN/STUN, make sure it is working using this [STUN/TURN testing] page
