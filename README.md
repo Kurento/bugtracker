@@ -52,6 +52,7 @@ checklist:
 
 * Read the documentation: If the answer is in the documentation, the answer
   will be “Read the documentation”... one mail round wasted
+* Check with the lates development version. Read about [Working with nightly builds] in the documentation. You might have to do a `sudo apt-get install dist-upgrade` in some cases
 * Webrtc is working in your target browser? use the [WebRTC test page]
 * Is it working on a different browser
 
@@ -117,7 +118,7 @@ the bug.
       * Config file in /etc/kurento/kurento.conf.json
 
     * Client libraries. Stating the flavour (NodeJS, JavaScript, Java or
-      homebrewed) it’s a plus, so we don’t have to ask that later
+      homebrewed) it’s a plus, so we don’t have to ask that later. Make sure they match the major an minor versions of your KMS modules
 
     * Operating system where the client is running
 
@@ -137,6 +138,7 @@ the bug.
     you using TURN/STUN?
 
   * What does your pipeline look like?
+  * Have you checked the development version?
 
 * If you can provide a test application, please do so. A pointer to a github
   repo is very welcome, as it will put us both in the same path. This doesn’t
@@ -290,3 +292,4 @@ Before asking for support, please read first the [Kurento Netiquette Guidelines]
 [Open API specification]: http://kurento.github.io/doc-kurento/
 [apiary.io]: http://docs.streamoriented.apiary.io/
 [official github repository]: https://github.com/Kurento/
+[Working with nightly builds]: https://www.kurento.org/docs/current/mastering/kurento_development.html#working-with-nightly-builds
