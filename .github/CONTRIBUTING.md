@@ -1,1 +1,1 @@
-../README.md
+See guidelines [here](../README.md)
