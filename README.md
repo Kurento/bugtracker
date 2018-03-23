@@ -1,118 +1,83 @@
 [![License badge](https://img.shields.io/badge/license-Apache2-orange.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-[![Documentation badge](https://readthedocs.org/projects/fiware-orion/badge/?version=latest)](http://doc-kurento.readthedocs.org/en/latest/)
+[![Documentation badge](https://readthedocs.org/projects/fiware-orion/badge/?version=latest)](https://doc-kurento.readthedocs.io)
 [![Docker badge](https://img.shields.io/docker/pulls/fiware/orion.svg)](https://hub.docker.com/r/fiware/stream-oriented-kurento/)
-[![Support badge]( https://img.shields.io/badge/support-sof-yellowgreen.svg)](http://stackoverflow.com/questions/tagged/kurento)
+[![Support badge]( https://img.shields.io/badge/support-sof-yellowgreen.svg)](https://stackoverflow.com/questions/tagged/kurento)
 
 [![][KurentoImage]][Kurento]
 
-Copyright © 2013-2016 [Kurento]. Licensed under [Apache 2.0 License].
+Copyright 2018 [Kurento]. Licensed under [Apache 2.0 License].
 
-bugtracker
-==========
+[Kurento]: https://kurento.org
+[KurentoImage]: https://secure.gravatar.com/avatar/21a2a12c56b2a91c8918d5779f1778bf?s=120
+[Apache 2.0 License]: http://www.apache.org/licenses/LICENSE-2.0
 
-Reporting bugs
---------------
 
-Ok, you’ve run into something unexpected. Some kind of weird error that makes
-everything crumble. How should you proceed? This document represents the
-guidelines for reporting bugs found in Kurento Media Server, its libraries or
-any of the projects related and owned by [Kurento], and hosted in the [official
-github repository].
 
-If you're new to reporting bugs, you may want to try getting help from the more
-experienced contributor. You can also ask for support on how to report in our
-[Kurento Public Mailing list], or in our IRC channel (*#kurento*).
+Kurento Bug Tracker
+===================
 
-We would like all users to please observe these reporting guidelines, as they
-will help us all save time, and acquire the clarity needed to diagnose the
-problem quickly.
+Reporting Issues
+----------------
 
-TL;DR
------
+When reporting a bug, please include as much information as possible, this will help us solve the problem. Also, try to follow these guidelines as closely as possible, because they make it easier for people to work on the issue, and that means more chances that the issue gets fixed:
 
-* Be precise: don’t wander around and go straight to the point, describing as
-  precisely as possible what’s happening
+- **Be proactive**. If you are working with an old version of Kurento, please check with newer versions, specially with the [latest pre-release version](https://doc-kurento.readthedocs.io/en/stable/user/installation_dev.html). We can't emphasize this enough: *it's the first thing that we are going to ask*.
 
-* Be clear: explain how to reproduce the problem, step by step, so others can
-  reproduce the bug
+- **Be curious**. Has it been asked before? Is it really a bug? Everybody hates duplicated reports. The Search tool is your friend!
 
-* Be economic: provide the minimum amount of information needed to understand
-  what’s happening
+- **Be precise**. Don't wander around your situation and go straight to the point, unless the context around it is technically required to understand what is going on. Describe as precisely as possible what you are doing and what is happening but you think that shouldn't happen.
 
-* Be clean: report only one problem per issue so we can track individual
-  issues
+- **Be specific**. Explain how to reproduce the problem, being very systematic about it: step by step, so others can reproduce the bug. Also, report *only one problem per opened issue*.
 
-* Be curious: has it been asked before? is it really a bug? Google is your
-  friend!
 
-* Be provactive: Check with other versions, speacially with the latest 
-  develeopment version. We can't emphasize this enough: it's the
-  first thing that we are going to ask
 
 How to report a bug
 -------------------
 
 ### Is it really a bug?
 
-The first thing before reporting a bug, is to really make sure it is a bug. Many
-of the messages from the list are not bugs: coding issues, configuration
-problems... In order to make sure there is indeed a bug, you can follow this
-checklist:
+The first thing before reporting a bug, is to really make sure it is a bug. Many of the messages from the list are not bugs: coding issues, configuration problems... In order to make sure there is indeed a bug, you can follow this checklist:
 
-* Read the documentation: If the answer is in the documentation, the answer
-  will be “Read the documentation”... one mail round wasted
+* Read the documentation: If the answer is in the documentation, the answer will be "Read the documentation!"... one mail round wasted.
 
-* Check with the lates development version. Read about [Working with nightly builds] 
-  in the documentation if needed. Note: You might have to run 
-  `sudo apt-get install dist-upgrade` in some cases, if you see the message 
-  `The following packages have been kept back`
+* Check the documentation to test with the [latest pre-release version](https://doc-kurento.readthedocs.io/en/stable/user/installation_dev.html). Note: You might have to run `sudo apt-get install dist-upgrade` in some cases, if you see the message `The following packages have been kept back ...`
 
-* Webrtc is working in your target browser? use the [WebRTC test page]
+* Is WebRTC working in your target browser? use the [WebRTC test page] to check it out.
 
-* Is it working on a different browser
+* Is it working on a different browser?
 
-* If you are using TURN/STUN, make sure it is working using this [STUN/TURN testing] page
+* If you are using TURN/STUN, make sure it is working using this [STUN/TURN testing] page.
 
-* Is there a tutorial that does exactly what you are trying to do? Check out
-  the code from github, run it in your machine and see what happens. Those
-  tutorials are tested in our CI environment, so you can be quite certain they
-  are in good shape
+* Is there a tutorial that does exactly what you are trying to do? Check out the code from GitHub, run it in your machine and see what happens. Those tutorials are tested in our CI environment, so you can be quite certain they are in good shape.
 
-* Check your pipeline. Make a drawing if you need to, but make sure everything
-  is connected the way it should
+* Check your pipeline. Make a drawing if you need to, but make sure everything is connected the way it should.
 
-* Check the configuration loaded in your KMS is what it should be. This can be
-  seen in the first 100 lines of your KMS logs. If it’s not, change it and see
-  if the problem is solved
+* Check the configuration loaded in your KMS is what it should be. This can be seen in the first 100 lines of your KMS logs. If it's not, change it and see if the problem is solved.
 
-* Read the logs, they are normally quite interesting. Sometimes building tools
-  are just not configured correctly or others have reported the same error.
-  Client logs, server logs, build tool logs… For all of those, Google is your
-  friend!
+* Read the logs, they are normally quite interesting. Sometimes building tools are just not configured correctly or others have reported the same error. Client logs, server logs, build tool logs... For all of those, use Google!
 
-* Check that you are running the same version of client libraries and KMS.
-  While minor versions are compatible, different major versions aren’t
+* Check that you are running the same version of client libraries and KMS. While minor versions are compatible, different major versions aren't.
 
-### Ok, it’s a bug. What now?
+[WebRTC test page]: https://test.webrtc.org/
+[STUN/TURN testing]: https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/
 
-First of all, don’t panic! There is still a small work to be done before reporting
-the bug.
 
-* If it’s an installation issue, don’t touch anything! Normally when this
-  happens, we tend to do random things that could only make things worse
 
-* Choose a bug header that fits the problem
+### Ok, it's a bug. What now?
 
-  * Bad: “I can’t see video. Help!”
+First of all, don't panic! There is still a small work to be done before reporting the bug:
 
-  * Bettter: “KMS 6.1.1-dev is not showing loopback video in magic-mirror
-    tutorial -FF40”
+* If it's an installation issue, don't touch anything! Normally when this happens, we tend to do random things that could only make things worse.
 
-  * Best: “KMS 6.1.1-dev, magic-mirror-tutorial 6.1.1-SNAPSHOT, Mac OS X
-    FF40 -- Can’t see loopback video”
+* Choose a bug header that fits the problem:
 
-* Provide a good description of the problem, with the minimum relevant amount of
-  information to reproduce and diagnose the bug
+  * Bad: "I can't see video. Help!"
+
+  * Bettter: "KMS 6.7.1-dev not showing loopback video, FF40"
+
+  * Best: "KMS 6.7.1-dev, magic-mirror 6.7.1-SNAPSHOT, Mac OSX, FF40: Can't see loopback video"
+
+* Provide a good description of the problem, with the minimum relevant amount of information to reproduce and diagnose the bug
 
   * What steps will reproduce the problem?
 
@@ -120,196 +85,149 @@ the bug.
 
   * What happens instead?
 
-  * What are the specific versions of
+  * What are the specific versions of...
 
     * KMS
 
-      * kurento-media-server -v
+      * `kurento-media-server -v`
 
-      * dpkg -l | egrep -i "kurento|gstreamer|nice"
+      * `dpkg -l | egrep -i "kurento|gstreamer|nice"`
 
-      * Service configuration in /etc/default/kurento-media-server
+      * Service configuration in `/etc/default/kurento-media-server`
 
-      * Config file in /etc/kurento/kurento.conf.json
+      * Config file in `/etc/kurento/kurento.conf.json`
 
-    * Client libraries. Stating the flavour (NodeJS, JavaScript, Java or
-      homebrewed) it’s a plus, so we don’t have to ask that later. Make sure they match 
-      the major an minor versions of your KMS modules
+    * Client libraries. Stating the flavour (NodeJS, JavaScript, Java or homebrewed) is a plus, so we don't have to ask that later. Make sure they match the Major and Minor versions of your KMS modules.
 
-    * Operating system where the client is running
+    * Operating System where the client is running.
 
     * Browser (type and version). If Chrome:
 
-      * chrome://webrtc-internals both of sender and receiver as PDF
+      * `chrome://webrtc-internals` of both sender and receiver, as PDF.
 
-      * setLocalDescription
+      * `setLocalDescription` line.
 
-      * setRemoteDescription
+      * `setRemoteDescription` line.
 
-      * Stats graphs for bweforvideo
+      * Stats graphs for `bweforvideo`.
 
-      * Stats graphs for ssrc_*
+      * Stats graphs for `ssrc_*`.
 
-  * How is the system deployed? Are KMS and client in the same network? Are
-    you using TURN/STUN?
+  * How is the system deployed? Are KMS and client in the same network? Are you using TURN/STUN?
 
   * What does your pipeline look like?
 
   * Have you checked the development version?
 
-* If you can provide a test application, please do so. A pointer to a github
-  repo is very welcome, as it will put us both in the same path. This doesn’t
-  mean that we are going to debug your code, as there are many thing in there
-  that are business-logic of your application
+* If you can provide a test application, please do so. A pointer to a GitHub repo is very welcome, as it will put us both in the same path. This doesn't mean that we are going to debug your code, as there are many thing in there that are business-logic specific to your application.
 
-* Provide the logs if they are relevant (i.e. 99% of the time)
+* Provide the logs if they are relevant (i.e. 99% of the time).
+
+For some specific type of bugs, there is some more information that you can provide:
+
+* If the bug was recently introduced, finding a regression window can help identify the cause of the bug.
+
+* If the bug involves a media server crash, providing core dumps will be of great help
+
+* If you are reporting slowness or high resource consumption, please provide a profile of the system, along with the specs of the machine KMS and clients are running. It's not the same having 20 clients in one Chrome instance, than having them in different instances on different machines.
+
+* If you are reporting a WebRTC bug, please provide WebRTC internal stats.
+
+  * Chrome: `chrome://webrtc-internals`.
+
+  * Firefox: `about:webrtc`.
 
 
-For some specific type of bugs, there is some more information that you can provide
-
-* If the bug was recently introduced, finding a regression window can help
-  identify the cause of the bug.
-
-* If the bug involves a media server crash, providing core dumps will be of
-  great help
-
-* If you are reporting slowness or high resource consumption, please provide a
-  profile of the system, along with the specs of the machine KMS and clients
-  are running. It’s not the same having 20 clients in one Chrome instance, than
-  having them in different instances on different machines.
-
-* If you are reporting a WebRTC bug, please provide WebRTC internals stats
-
-	* Chrome: chrome://webrtc-internals
-
-	* Firefox: about:webrtc
 
 ### So, how should a bug report look like?
 
 * Summary: How would you describe the bug in less than 60 characters?
 
-* Version: select the earliest Version with what the problem can be reproduced
+* Version: Select the earliest Version with what the problem can be reproduced.
 
 * OS: On which operating system (OS) did you find it?
 
 * Description: The details of your problem report, including:
 
-	* Overview
+  * Overview.
 
-	* Build Id
+  * Build Id.
 
-* Steps to Reproduce
+* Steps to reproduce.
 
-* Actual Results
+* Actual results.
 
-* Expected Results
+* Expected results.
 
-Kurento
-=======
 
-What is Kurento
----------------
 
-Kurento is an open source software project providing a platform suitable
-for creating modular applications with advanced real-time communication
-capabilities. For knowing more about Kurento, please visit the Kurento
-project website: http://www.kurento.org.
+About Kurento
+=============
 
-Kurento is part of [FIWARE]. For further information on the relationship of
-FIWARE and Kurento check the [Kurento FIWARE Catalog Entry]
+Kurento is an open source software project providing a platform suitable for creating modular applications with advanced real-time communication capabilities. For knowing more about Kurento, please visit the Kurento project website: https://www.kurento.org.
 
-Kurento is part of the [NUBOMEDIA] research initiative.
+Kurento is part of [FIWARE]. For further information on the relationship of FIWARE and Kurento check the [Kurento FIWARE Catalog Entry]. Kurento is also part of the [NUBOMEDIA] research initiative.
+
+[FIWARE]: http://www.fiware.org
+[Kurento FIWARE Catalog Entry]: http://catalogue.fiware.org/enablers/stream-oriented-kurento
+[NUBOMEDIA]: http://www.nubomedia.eu
+
+
 
 Documentation
 -------------
 
-The Kurento project provides detailed [documentation] including tutorials,
-installation and development guides. A simplified version of the documentation
-can be found on [readthedocs.org]. The [Open API specification] a.k.a. Kurento
-Protocol is also available on [apiary.io].
+The Kurento project provides detailed [documentation] including tutorials, installation and development guides. The [Open API specification], also known as *Kurento Protocol*, is available on [apiary.io].
+
+[documentation]: https://www.kurento.org/documentation
+[Open API specification]: http://kurento.github.io/doc-kurento/
+[apiary.io]: http://docs.streamoriented.apiary.io/
+
+
+
+Useful Links
+------------
+
+Usage:
+
+* [Installation Guide](http://doc-kurento.readthedocs.io/en/stable/user/installation.html)
+* [Compilation Guide](http://doc-kurento.readthedocs.io/en/stable/dev/dev_guide.html#developing-kms)
+* [Contribution Guide](http://doc-kurento.readthedocs.io/en/stable/project/contribute.html)
+
+Issues:
+
+* [Bug Tracker](https://github.com/Kurento/bugtracker/issues)
+* [Support](http://doc-kurento.readthedocs.io/en/stable/user/support.html)
+
+News:
+
+* [Kurento Blog](https://www.kurento.org/blog)
+* [Google Groups](https://groups.google.com/forum/#!forum/kurento)
+
+
 
 Source
 ------
 
-Code for other Kurento projects can be found in the [GitHub Kurento Group].
+All source code belonging to the Kurento project can be found in the [Kurento GitHub organization page].
 
-News and Website
-----------------
+[Kurento GitHub organization page]: https://github.com/Kurento
 
-Check the [Kurento blog]
-Follow us on Twitter @[kurentoms].
 
-Issue tracker
--------------
-
-Issues and bug reports should be posted to the [GitHub Kurento bugtracker]
 
 Licensing and distribution
 --------------------------
+
+Copyright 2018 Kurento
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-  http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
-Contribution policy
--------------------
-
-You can contribute to the Kurento community through bug-reports, bug-fixes, new
-code or new documentation. For contributing to the Kurento community, drop a
-post to the [Kurento Public Mailing List] providing full information about your
-contribution and its value. In your contributions, you must comply with the
-following guidelines
-
-* You must specify the specific contents of your contribution either through a
-  detailed bug description, through a pull-request or through a patch.
-* You must specify the licensing restrictions of the code you contribute.
-* For newly created code to be incorporated in the Kurento code-base, you must
-  accept Kurento to own the code copyright, so that its open source nature is
-  guaranteed.
-* You must justify appropriately the need and value of your contribution. The
-  Kurento project has no obligations in relation to accepting contributions
-  from third parties.
-* The Kurento project leaders have the right of asking for further
-  explanations, tests or validations of any code contributed to the community
-  before it being incorporated into the Kurento code-base. You must be ready to
-  addressing all these kind of concerns before having your code approved.
-
-Support
--------
-
-The Kurento project provides community support through the  [Kurento Public
-Mailing List] and through [StackOverflow] using the tags *kurento* and
-*fiware-kurento*.
-
-Before asking for support, please read first the [Kurento Netiquette Guidelines]
-
-[WebRTC test page]: https://test.webrtc.org/
-[STUN/TURN testing]: https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/
-[documentation]: http://www.kurento.org/documentation
-[FIWARE]: http://www.fiware.org
-[GitHub Kurento bugtracker]: https://github.com/Kurento/bugtracker/issues
-[GitHub Kurento Group]: https://github.com/kurento
-[kurentoms]: http://twitter.com/kurentoms
-[Kurento]: http://kurento.org
-[Kurento Blog]: http://www.kurento.org/blog
-[Kurento FIWARE Catalog Entry]: http://catalogue.fiware.org/enablers/stream-oriented-kurento
-[Kurento Netiquette Guidelines]: http://www.kurento.org/blog/kurento-netiquette-guidelines
-[Kurento Public Mailing list]: https://groups.google.com/forum/#!forum/kurento
-[KurentoImage]: https://secure.gravatar.com/avatar/21a2a12c56b2a91c8918d5779f1778bf?s=120
-[Apache 2.0 License]: http://www.apache.org/licenses/LICENSE-2.0
-[NUBOMEDIA]: http://www.nubomedia.eu
-[StackOverflow]: http://stackoverflow.com/search?q=kurento
-[Read-the-docs]: http://read-the-docs.readthedocs.org/
-[readthedocs.org]: http://kurento.readthedocs.org/
-[Open API specification]: http://kurento.github.io/doc-kurento/
-[apiary.io]: http://docs.streamoriented.apiary.io/
-[official github repository]: https://github.com/Kurento/
-[Working with nightly builds]: https://www.kurento.org/docs/current/mastering/kurento_development.html#working-with-nightly-builds
