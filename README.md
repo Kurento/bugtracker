@@ -91,7 +91,7 @@ First of all, don't panic! There is still a small work to be done before reporti
 
       * `kurento-media-server -v`
 
-      * `dpkg -l | egrep -i "kurento|gstreamer|nice"`
+      * `printf '```\n%s\n```' "$(dpkg -l | egrep -i "kurento|gstreamer|nice")"` 🠘 **Including the backticks!**
 
       * Service configuration in `/etc/default/kurento-media-server`
 
