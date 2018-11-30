@@ -95,7 +95,7 @@ First of all, don't panic! There is still a small work to be done before reporti
 
       * Service configuration in `/etc/default/kurento-media-server`
 
-      * Config file in `/etc/kurento/kurento.conf.json`
+      * Config file in `/etc/kurento/kurento.conf.ini`
 
     * Client libraries. Stating the flavour (NodeJS, JavaScript, Java or homebrewed) is a plus, so we don't have to ask that later. Make sure they match the Major and Minor versions of your KMS modules.
 
