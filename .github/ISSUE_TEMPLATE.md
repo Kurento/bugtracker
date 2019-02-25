@@ -14,27 +14,37 @@ Issues that are not bugs will be immediately rejected
 
 Paste output of `kurento-media-server -v` in the machine where KMS is running
 
+**Ubuntu Version**
+
+Paste output of `lsb_release -a` in the machine where KMS is running
+
 **Other libraries versions**:
 
-Paste output of executing `dpkg -l | egrep -i "kurento|gst.*1.5|nice"` in the
+Paste output of executing `dpkg -l | grep -Pi 'kurento|gst.*1.5|nice'` in the
 machine where KMS is running
 
 **Client libraries**
+
 - Language: <Java, Node.js, JavaScript, homebrewed>
 - Version:
 
 **Browsers tested**
-  Add OK or FAIL, along with the version, after browsers where you
-have tested this issue:
+
+Add OK or FAIL, along with the version, after browsers where you have tested
+this issue:
+
 - Chrome:
 - Firefox:
-- Native:
+- Safari:
+- Native library:
 
 **System description:**
-	Please describe your setup (where is KMS located, where are the
-	clients, STUN, TURN...)
+
+Please describe your setup (where is KMS located, where are the clients,
+whether you are using STUN/TURN, etc.)
 
 **What steps will reproduce the problem?**
+
 1.
 2.
 3.
@@ -45,4 +55,4 @@ have tested this issue:
 
 **Does it happen with one of the tutorials?**
 
-**Please provide any additional information below.**
+**Please provide any additional information below**
