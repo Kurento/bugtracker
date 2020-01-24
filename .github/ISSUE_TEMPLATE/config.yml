@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Community Support Public Mailing List
+    url: https://groups.google.com/forum/#!forum/kurento
+    about: Please ask and answer here any questions about how to use Kurento.
+  - name: Commercial Support
+    url: https://doc-kurento.readthedocs.io/en/latest/user/support.html#support-commercial
+    about: If you are in a hurry, we can provide priority service with support services on demand.
