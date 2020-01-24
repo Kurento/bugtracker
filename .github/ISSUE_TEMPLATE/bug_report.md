@@ -1,13 +1,13 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: Create a report to help us improve. Note that reports that are not bugs will generally not be accepted.
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-Please complete the following information, where relevant. Note that reports that are not bugs of Kurento will generally not be accepted.
+Please complete the following information, where relevant.
 
 **Describe the bug**
 
