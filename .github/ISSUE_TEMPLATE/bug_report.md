@@ -32,9 +32,13 @@ If you're unsure about any of these, don't hesitate to ask. We're here to help!
 * [ ] I have checked the Troubleshooting Guide
   <!-- You can find it here:
   https://doc-kurento.readthedocs.io/en/latest/user/troubleshooting.html
+
+  INSTALL DEBUG SYMBOLS if your report is about a CRASH in Kurento,
+  before providing us with a stack trace:
+  https://doc-kurento.readthedocs.io/en/latest/dev/dev_guide.html#install-debug-symbols
   -->
 
-* [ ] I have tested with the latest version
+* [ ] I have tested with the latest version of Kurento
   <!-- You can check which one is the latest version here:
   https://doc-kurento.readthedocs.io/en/latest/project/relnotes/index.html
   -->
@@ -124,9 +128,9 @@ Kurento Media Server is running.
 -->
 
 ```
-kurento-media-server -v
-
 lsb_release -a
+
+kurento-media-server -v
 
 dpkg -l | grep -Pi 'kurento|kms-|gst.*1.5|nice'
 ```
