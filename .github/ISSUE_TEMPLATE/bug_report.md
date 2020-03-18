@@ -31,12 +31,12 @@ If you're unsure about any of these, don't hesitate to ask. We're here to help!
 
 * [ ] I have checked the Troubleshooting Guide
   <!-- You can find it here:
-  https://doc-kurento.readthedocs.io/en/stable/user/troubleshooting.html
+  https://doc-kurento.readthedocs.io/en/latest/user/troubleshooting.html
   -->
 
 * [ ] I have tested with the latest version
   <!-- You can check which one is the latest version here:
-  https://doc-kurento.readthedocs.io/en/stable/project/relnotes/index.html
+  https://doc-kurento.readthedocs.io/en/latest/project/relnotes/index.html
   -->
 
 
