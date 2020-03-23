@@ -4,5 +4,5 @@ contact_links:
     url: https://groups.google.com/forum/#!forum/kurento
     about: Discussion forum where to ask and answer questions about how to use Kurento.
   - name: Commercial Support (Kurento Team)
-    url: https://doc-kurento.readthedocs.io/en/latest/user/support.html#support-commercial
+    url: [contact](mailto:openvidu@gmail.com)
     about: We provide priority support and consulting services. This funds our team and keeps the Kurento project alive.
