@@ -20,16 +20,16 @@ https://doc-kurento.readthedocs.io/en/latest/user/support.html#reporting-issues
 
 ## Prerequisites
 <!--
-Go over all the following points, and put an 'x' in all the boxes that apply.
+Go over all the following points, and fill with an 'X' in all the boxes that apply.
 If you're unsure about any of these, don't hesitate to ask. We're here to help!
 -->
 
-* [ ] I have read the SUPPORT document
+* [] I have read the SUPPORT document
   <!-- You can read it here:
   https://github.com/Kurento/.github/blob/master/SUPPORT.md
   -->
 
-* [ ] I have checked the Troubleshooting Guide
+* [] I have checked the Troubleshooting Guide
   <!-- You can find it here:
   https://doc-kurento.readthedocs.io/en/latest/user/troubleshooting.html
 
@@ -38,14 +38,18 @@ If you're unsure about any of these, don't hesitate to ask. We're here to help!
   https://doc-kurento.readthedocs.io/en/latest/dev/dev_guide.html#install-debug-symbols
   -->
 
-* [ ] I have tested with the latest version of Kurento
+* [] I have tested with the latest version of Kurento
   <!-- You can check which one is the latest version here:
   https://doc-kurento.readthedocs.io/en/latest/project/relnotes/index.html
   -->
 
 
 ## Issue description
-<!-- A clear and concise description of what the bug is. -->
+<!--
+A clear and concise description of what the bug is.
+
+If you paste code or logs, surround with ```triple backquotes``` to keep format.
+-->
 
 
 ## Context
@@ -79,7 +83,36 @@ or ideas on how to implement the solution.
 -->
 
 
-## Environment info
+### INFO about Kurento Media Server
+
+* Kurento version:  <!-- E.g. 6.12.0, nightly -->
+* Server OS:        <!-- E.g. Ubuntu 16.04 (Xenial), 18.04 (Bionic), etc. -->
+* Installation method:
+    <!-- Fill with an 'X' in all the boxes that apply. -->
+  - [] apt-get
+    <!-- https://doc-kurento.readthedocs.io/en/latest/user/installation.html#installation-local -->
+  - [] Docker
+    <!-- https://doc-kurento.readthedocs.io/en/latest/user/installation.html#installation-docker -->
+  - [] AWS
+    <!-- https://doc-kurento.readthedocs.io/en/latest/user/installation.html#installation-aws -->
+  - [] Built from sources
+    <!-- https://doc-kurento.readthedocs.io/en/latest/dev/dev_guide.html#dev-sources -->
+
+
+### INFO about your Application Server
+
+* Language:                 <!-- E.g. Java, Node.js, browser JavaScript, etc. -->
+* Kurento Client version:   <!-- E.g. 6.12.0, nightly -->
+
+
+### INFO about end-user clients
+
+* Device(s):    <!-- E.g. PC, Mac, Android, iPhone, etc. -->
+* OS(es):       <!-- E.g. Ubuntu 18.04, Windows 10, iOS 12, etc. -->
+* Browser(s):   <!-- E.g. Firefox 74, Chrome 80, Safari 12.0, etc. -->
+
+
+## INFO about your environment
 <!--
 Include as many relevant details about the environment where you experienced
 the issue. Include things like:
@@ -88,49 +121,23 @@ the issue. Include things like:
 * If the WebRTC streams are being relayed through your TURN servers.
 * The network topology between servers / services / containers / etc.
 * If there are any web proxies.
-* Anything that you think might be relevant or useful.
+
+ANYTHING that you think might be relevant or useful.
 -->
 
 
-### INFO: Kurento Media Server
-
-* Kurento version:  <!-- E.g. 6.12.0, nightly -->
-* Server OS:        <!-- E.g. Ubuntu 16.04 (Xenial), 18.04 (Bionic), etc. -->
-* Installation method:
-    <!-- Put an 'x' in all the boxes that apply. -->
-  - [ ] apt-get
-    <!-- https://doc-kurento.readthedocs.io/en/latest/user/installation.html#installation-local -->
-  - [ ] Docker
-    <!-- https://doc-kurento.readthedocs.io/en/latest/user/installation.html#installation-docker -->
-  - [ ] AWS
-    <!-- https://doc-kurento.readthedocs.io/en/latest/user/installation.html#installation-aws -->
-  - [ ] Built from sources
-    <!-- https://doc-kurento.readthedocs.io/en/latest/dev/dev_guide.html#dev-sources -->
-
-
-### INFO: Application Server
-
-* Language:                 <!-- E.g. Java, Node.js, browser JavaScript, etc. -->
-* Kurento Client version:   <!-- E.g. 6.12.0, nightly -->
-
-
-### INFO: End-user clients
-
-* Device(s):    <!-- E.g. PC, Mac, Android, iPhone, etc. -->
-* OS(es):       <!-- E.g. Ubuntu 18.04, Windows 10, iOS 12, etc. -->
-* Browser(s):   <!-- E.g. Firefox 74, Chrome 80, Safari 12.0, etc. -->
-
-
-### Version details
+### Commands output
 <!--
-Please paste output of running these commands in the same machine where
+Paste output of running these commands in the same machine where
 Kurento Media Server is running.
+
+Surround with ```triple backquotes```, to keep the output correctly formatted.
 -->
 
 ```
-lsb_release -a
+cat /etc/lsb-release
 
-kurento-media-server -v
+kurento-media-server --version
 
 dpkg -l | grep -Pi 'kurento|kms-|gst.*1.5|nice'
 ```
