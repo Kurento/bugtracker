@@ -1,0 +1,20 @@
+# Automatically close issues if the body doesn't match our regular expression
+
+name: Close issues that don't follow the issue template
+
+# Run when a new issue is created
+# roots/issue-closer action doesn't support other types
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  check-template:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close issues that don't follow the issue template
+        uses: roots/issue-closer@v1.1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-close-message: "Hello @${issue.user.login} :wave: this issue is being automatically closed because it does not follow the issue template."
+          issue-pattern: "^.*description.*reproduce.*$"
