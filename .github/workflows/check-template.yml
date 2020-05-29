@@ -1,6 +1,6 @@
 # Automatically close issues if the body doesn't match our regular expression
 
-name: Close issues that don't follow the issue template
+name: Enforce issue template
 
 # Run when a new issue is created
 # roots/issue-closer action doesn't support other types
@@ -12,9 +12,21 @@ jobs:
   check-template:
     runs-on: ubuntu-latest
     steps:
-      - name: Close issues that don't follow the issue template
+      - name: Enforce issue template
         uses: roots/issue-closer@v1.1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-close-message: "Hello @${issue.user.login} :wave: this issue is being automatically closed because it does not follow the issue template."
+          issue-close-message: >
+            Hello @${issue.user.login} :wave:! Thanks a lot for reporting a bug
+            or defect that you have found in Kurento.
+
+            However, we cannot accept your report as-is. It is being
+            automatically closed because **it does not follow the issue
+            template**.
+
+            The issue template helps us understand and categorize issues, so it
+            is a very important tool that we need you to use.
+
+            Please, create a new issue and follow the template, or reopen this
+            same issue to edit and provide all required information.
           issue-pattern: ".*description.*reproduce.*"
