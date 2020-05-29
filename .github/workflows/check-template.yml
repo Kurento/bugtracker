@@ -20,12 +20,15 @@ jobs:
             Hello @${issue.user.login} :wave:! Thanks a lot for reporting a bug
             or defect that you have found in Kurento.
 
+
             However, we cannot accept your report as-is. It is being
             automatically closed because **it does not follow the issue
             template**.
 
+
             The issue template helps us understand and categorize issues, so it
             is a very important tool that we need you to use.
+
 
             Please, create a new issue and follow the template, or reopen this
             same issue to edit and provide all required information.
