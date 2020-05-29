@@ -17,4 +17,4 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-close-message: "Hello @${issue.user.login} :wave: this issue is being automatically closed because it does not follow the issue template."
-          issue-pattern: "^.*description.*reproduce.*$"
+          issue-pattern: ".*description.*reproduce.*"
