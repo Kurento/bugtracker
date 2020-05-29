@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Enforce issue template
+        if: false
         uses: roots/issue-closer@v1.1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
