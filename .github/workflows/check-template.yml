@@ -13,24 +13,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Enforce issue template
-        if: false
         uses: roots/issue-closer@v1.1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-pattern: '\[[xX]\] I agree to fill this issue template'
           issue-close-message: >
-            Hello @${issue.user.login} :wave:! Thanks a lot for reporting a bug
-            or defect that you have found in Kurento.
+            Hello @${issue.user.login} :wave:! Thanks a lot for reporting an
+            issue after finding a bug.
 
 
-            However, we cannot accept your report as-is. It is being
-            automatically closed because **it does not follow the issue
-            template**.
+            However, **your report doesn't follow the [issue template](https://github.com/j1elo/test-repo/blob/master/.github/ISSUE_TEMPLATE/bug_report.md)**,
+            so it is being automatically closed. We are really sorry for that,
+            but we need all reports to follow the template, or else it won't be
+            possible to understand and help with all issues.
 
 
-            The issue template helps us understand and categorize issues, so it
-            is a very important tool that we need you to use.
-
-
-            Please, create a new issue and follow the template, or reopen this
+            Please, create a new issue following the template, or reopen this
             same issue to edit and provide all required information.
-          issue-pattern: ".*description.*reproduce.*"

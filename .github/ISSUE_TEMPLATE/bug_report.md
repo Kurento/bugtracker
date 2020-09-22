@@ -18,6 +18,7 @@ Please provide enough information so that others can review your report.
 Fill with an 'X' in all the boxes that apply.
 If you're unsure about any of these, don't hesitate to ask. We're here to help!
 -->
+* [] I agree to fill this issue template.
 * [] I have read the [Troubleshooting Guide] and [Support Instructions].
 
 [Troubleshooting Guide]: https://doc-kurento.readthedocs.io/en/latest/user/troubleshooting.html
