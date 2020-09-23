@@ -22,12 +22,12 @@ jobs:
             issue after finding a bug.
 
 
-            However, **your report doesn't follow the [issue template](https://github.com/j1elo/test-repo/blob/master/.github/ISSUE_TEMPLATE/bug_report.md)**,
+            However, **your report doesn't follow the [issue template](https://raw.githubusercontent.com/Kurento/bugtracker/master/.github/ISSUE_TEMPLATE/bug_report.md)**,
             so it is being automatically closed. We are really sorry for that,
             but we need all reports to follow the template, or else it won't be
             possible to understand and help with all issues.
 
 
             Please, [create a new issue](https://github.com/Kurento/bugtracker/issues/new/choose)
-            following the template, or reopen this same issue to edit and
-            provide all required information.
+            following the template, or reopen this one to edit and provide all
+            required information.
