@@ -16,7 +16,7 @@ jobs:
         uses: roots/issue-closer@v1.1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-pattern: '\[[xX]\] I agree to fill this issue template'
+          issue-pattern: 'I agree to fill this issue template'
           issue-close-message: >
             Hello @${issue.user.login} :wave:! Thanks a lot for reporting an
             issue after finding a bug.
