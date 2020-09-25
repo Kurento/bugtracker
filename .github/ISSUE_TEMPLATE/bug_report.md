@@ -72,7 +72,7 @@ or ideas on how to implement the solution.
 ### INFO about Kurento Media Server
 
 * Kurento version:  <!-- E.g. 6.12.0, nightly -->
-* Server OS:        <!-- E.g. Ubuntu 16.04 (Xenial), 18.04 (Bionic), etc. -->
+* Server OS:          <!-- E.g. Ubuntu 16.04 (Xenial), 18.04 (Bionic), etc. -->
 * Installation method:
     <!-- Fill with an 'X' in all the boxes that apply. -->
   - [] [apt-get]
@@ -88,15 +88,15 @@ or ideas on how to implement the solution.
 
 ### INFO about your Application Server
 
-* Language:                 <!-- E.g. Java, Node.js, browser JavaScript, etc. -->
-* Kurento Client version:   <!-- E.g. 6.12.0, nightly -->
+* Programming Language:  <!-- E.g. Java, Node.js, browser JavaScript, etc. -->
+* Kurento Client version:     <!-- E.g. 6.12.0, nightly -->
 
 
 ### INFO about end-user clients
 
 * Device(s):    <!-- E.g. PC, Mac, Android, iPhone, etc. -->
-* OS(es):       <!-- E.g. Ubuntu 18.04, Windows 10, iOS 12, etc. -->
-* Browser(s):   <!-- E.g. Firefox 74, Chrome 80, Safari 12.0, etc. -->
+* OS(es):        <!-- E.g. Ubuntu 18.04, Windows 10, iOS 12, etc. -->
+* Browser(s):  <!-- E.g. Firefox 74, Chrome 80, Safari 12.0, etc. -->
 
 
 ## INFO about your environment
