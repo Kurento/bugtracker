@@ -29,8 +29,8 @@ If you're unsure about any of these, don't hesitate to ask. We're here to help!
 ## Issue description
 
 <!--
-A clear and concise description of what the bug is.
-If you paste code or logs, surround with ```triple backquotes``` to keep format.
+A clear and concise description of what the bug is. If you paste code or logs,
+put it inside ```triple backquotes``` to preserve the formatting.
 -->
 
 
@@ -114,19 +114,21 @@ ANYTHING that you think might be relevant or useful.
 -->
 
 
-### Commands output
+### Run these commands
 
 <!--
-Paste output of running these commands in the same machine where
-Kurento Media Server is running.
-
-Surround with ```triple backquotes```, to keep the output correctly formatted.
+Run these commands in your Kurento machine, and paste the output here.
+Put the output inside ```triple backquotes``` to preserve the formatting.
 -->
 
 ```
 cat /etc/lsb-release
+```
 
+```
 kurento-media-server --version
+```
 
+```
 dpkg -l | grep -Pi 'kurento|kms-|gst.*1.5|nice'
 ```
