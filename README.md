@@ -21,7 +21,7 @@ Reporting Issues
 
 When reporting a bug, please include as much information as possible, this will help us solve the problem. Also, try to follow these guidelines as closely as possible, because they make it easier for people to work on the issue, and that means more chances that the issue gets fixed:
 
-- **Be proactive**. If you are working with an old version of Kurento, please check with newer versions, specially with the [latest pre-release version](https://doc-kurento.readthedocs.io/en/stable/user/installation_dev.html). We can't emphasize this enough: *it's the first thing that we are going to ask*.
+- **Be proactive**. If you are working with an old version of Kurento, please check with newer versions, specially with the [latest pre-release version](https://doc-kurento.readthedocs.io/en/latest/user/installation_dev.html). We can't emphasize this enough: *it's the first thing that we are going to ask*.
 
 - **Be curious**. Has it been asked before? Is it really a bug? Everybody hates duplicated reports. The Search tool is your friend!
 
@@ -40,7 +40,7 @@ The first thing before reporting a bug, is to really make sure it is a bug. Many
 
 * Read the documentation: If the answer is in the documentation, the answer will be "Read the documentation!"... one mail round wasted.
 
-* Check the documentation to test with the [latest pre-release version](https://doc-kurento.readthedocs.io/en/stable/user/installation_dev.html). Note: You might have to run `sudo apt-get install dist-upgrade` in some cases, if you see the message `The following packages have been kept back ...`
+* Check the documentation to test with the [latest pre-release version](https://doc-kurento.readthedocs.io/en/latest/user/installation_dev.html). Note: You might have to run `sudo apt-get install dist-upgrade` in some cases, if you see the message `The following packages have been kept back ...`
 
 * Is WebRTC working in your target browser? use the [WebRTC test page] to check it out.
 
@@ -190,14 +190,14 @@ Useful Links
 
 Usage:
 
-* [Installation Guide](http://doc-kurento.readthedocs.io/en/stable/user/installation.html)
-* [Compilation Guide](http://doc-kurento.readthedocs.io/en/stable/dev/dev_guide.html#developing-kms)
-* [Contribution Guide](http://doc-kurento.readthedocs.io/en/stable/project/contribute.html)
+* [Installation Guide](https://doc-kurento.readthedocs.io/en/latest/user/installation.html)
+* [Compilation Guide](https://doc-kurento.readthedocs.io/en/latest/dev/dev_guide.html#developing-kms)
+* [Contribution Guide](https://doc-kurento.readthedocs.io/en/latest/project/contribute.html)
 
 Issues:
 
 * [Bug Tracker](https://github.com/Kurento/bugtracker/issues)
-* [Support](http://doc-kurento.readthedocs.io/en/stable/user/support.html)
+* [Support](https://doc-kurento.readthedocs.io/en/latest/user/support.html)
 
 News:
 
