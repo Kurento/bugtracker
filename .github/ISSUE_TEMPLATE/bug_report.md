@@ -18,7 +18,6 @@ These are MANDATORY, otherwise the issue will be automatically closed.
 [Support Instructions]: https://github.com/Kurento/.github/blob/master/SUPPORT.md
 
 
-
 ## Issue description
 
 <!--
@@ -62,12 +61,28 @@ or ideas on how to implement the solution.
 -->
 
 
-### INFO about Kurento Media Server
+## Info about your environment
+
+<!--
+Include as many relevant details about the environment where you experienced
+the issue. Include things like:
+
+* What Kurento Endpoints are used, and how they are connected.
+* If you are configuring STUN or TURN in Kurento and/or in the browsers.
+* If the WebRTC streams are being relayed through your TURN servers.
+* The network topology between servers / services / containers / etc.
+* If there are any web proxies.
+
+ANYTHING that you think might be relevant or useful.
+-->
+
+
+### About Kurento Media Server
 
 * Kurento version:  <!-- E.g. 6.12.0, nightly -->
 * Server OS:          <!-- E.g. Ubuntu 16.04 (Xenial), 18.04 (Bionic), etc. -->
 * Installation method:
-    <!-- Fill with an 'X' in all the boxes that apply. -->
+    <!-- Fill with an 'x' in the boxes that apply. -->
   - [] [apt-get]
   - [] [Docker]
   - [] [AWS CloudFormation]
@@ -79,39 +94,24 @@ or ideas on how to implement the solution.
 [Built from sources]: https://doc-kurento.readthedocs.io/en/latest/dev/dev_guide.html#dev-sources
 
 
-### INFO about your Application Server
+### About your Application Server
 
 * Programming Language:  <!-- E.g. Java, Node.js, browser JavaScript, etc. -->
 * Kurento Client version:     <!-- E.g. 6.12.0, nightly -->
 
 
-### INFO about end-user clients
+### About end-user clients
 
 * Device(s):    <!-- E.g. PC, Mac, Android, iPhone, etc. -->
 * OS(es):        <!-- E.g. Ubuntu 18.04, Windows 10, iOS 12, etc. -->
 * Browser(s):  <!-- E.g. Firefox 74, Chrome 80, Safari 12.0, etc. -->
 
 
-## INFO about your environment
-
-<!--
-Include as many relevant details about the environment where you experienced
-the issue. Include things like:
-* What Kurento Endpoints are used, and how are connected.
-* If you are configuring STUN or TURN in Kurento and/or in the browsers.
-* If the WebRTC streams are being relayed through your TURN servers.
-* The network topology between servers / services / containers / etc.
-* If there are any web proxies.
-
-ANYTHING that you think might be relevant or useful.
--->
-
-
 ### Run these commands
 
 <!--
-Run these commands in your Kurento machine, and paste the output here.
-Put the output inside ```triple backquotes``` to preserve the formatting.
+Run these commands in your Kurento machine, and paste the output
+inside the ```triple backquotes``` to preserve formatting.
 -->
 
 ```
