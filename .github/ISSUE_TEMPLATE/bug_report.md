@@ -21,8 +21,9 @@ These are MANDATORY, otherwise the issue will be automatically closed.
 ## Issue description
 
 <!--
-A clear and concise description of what the bug is. If you paste code or logs,
-put it inside ```triple backquotes``` to preserve the formatting.
+A clear and concise description of what the bug is.
+
+Debug logs or source code snippets should go inside ```triple backquotes```.
 -->
 
 
