@@ -73,9 +73,9 @@ First of all, don't panic! There is still a small work to be done before reporti
 
   * Bad: "I can't see video. Help!"
 
-  * Bettter: "KMS 6.7.1-dev not showing loopback video, FF40"
+  * Bettter: "KMS 6.12.0-dev not showing loopback video, FF40"
 
-  * Best: "KMS 6.7.1-dev, magic-mirror 6.7.1-SNAPSHOT, Mac OSX, FF40: Can't see loopback video"
+  * Best: "KMS 6.12.0-dev, magic-mirror 6.12.0-SNAPSHOT, Mac OSX, FF40: Can't see loopback video"
 
 * Provide a good description of the problem, with the minimum relevant amount of information to reproduce and diagnose the bug
 
