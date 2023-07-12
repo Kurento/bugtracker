@@ -1,3 +1,14 @@
+# [ARCHIVED] Contents migrated to monorepo
+
+## This issue tracker is no longer active
+
+The new place for Kurento issues is in the [Kurento monorepo Issues](https://github.com/Kurento/kurento/issues) section, here:
+https://github.com/Kurento/kurento/issues
+
+Following the migration of all Kurento source code to the [Kurento monorepo](https://github.com/Kurento/kurento), this repository / bug tracker that you are currently seeing is also being discontinued.
+
+The old issues that are open in this repository are still considered valid, and if/when work is done on them, they will be moved on a case-by-case basis to the new issue tracker.
+
 [![License badge](https://img.shields.io/badge/license-Apache2-orange.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Documentation badge](https://readthedocs.org/projects/fiware-orion/badge/?version=latest)](https://doc-kurento.readthedocs.io)
 [![Docker badge](https://img.shields.io/docker/pulls/fiware/orion.svg)](https://hub.docker.com/r/fiware/stream-oriented-kurento/)
